@@ -1,0 +1,21 @@
+#Forma de usar el modulo
+
+#1- Limpiar la carpeta build usando 
+     make clean
+#2- Compilar el modulo usando 
+     make all
+#3- Cargar el modulo usando 
+     make load
+     #3.1- Puede que se genero un error de acceso denegado, eseto es por falta de permisos, se soluciona ejecutando:
+          sudo chmod 666 /dev/AD_4
+#4- Ejecucion de la hardware:
+     #4.1- Encendido del led
+          echo 1 > /dev/AD_4
+     #4.2- Ver el estado, se debere ver STATE:1 
+          cat /dev/AD_4
+     #4.3- Apagado del led
+          echo 0 > /dev/AD_4
+     #4.4- Ver estado, se debeera ver STATE:0
+          cat /dev/AD_4
+#5- DEscarga del modulo
+     make unload

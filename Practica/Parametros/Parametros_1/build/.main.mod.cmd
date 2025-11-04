@@ -1,0 +1,1 @@
+savedcmd_/home/nahuel/Practica/Parametros/Parametros_1/build/main.mod := printf '%s\n'   main.o | awk '!x[$$0]++ { print("/home/nahuel/Practica/Parametros/Parametros_1/build/"$$0) }' > /home/nahuel/Practica/Parametros/Parametros_1/build/main.mod

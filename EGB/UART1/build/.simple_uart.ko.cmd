@@ -1,0 +1,1 @@
+savedcmd_/home/nahuel/EGB/UART1/build/simple_uart.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /home/nahuel/EGB/UART1/build/simple_uart.ko /home/nahuel/EGB/UART1/build/simple_uart.o /home/nahuel/EGB/UART1/build/simple_uart.mod.o /home/nahuel/EGB/UART1/build/.module-common.o

@@ -1,0 +1,1 @@
+savedcmd_/home/nahuel/Practica/Archivo_de_Dispositivo/AD_2/build/modules.order := {   echo /home/nahuel/Practica/Archivo_de_Dispositivo/AD_2/build/char_device_2.o; :; } > /home/nahuel/Practica/Archivo_de_Dispositivo/AD_2/build/modules.order

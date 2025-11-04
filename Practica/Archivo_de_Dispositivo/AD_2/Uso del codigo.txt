@@ -1,0 +1,15 @@
+
+# 2. Compilar el nuevo
+make clean
+make
+
+# 3. Cargar
+sudo insmod AD_2.ko
+
+# 4. Probar (¡ahora debería funcionar!)
+sudo cat /dev/AD_2
+echo "Hola desde AD_2" | sudo tee /dev/AD_2
+sudo cat /dev/AD_2
+
+# 5. Ver logs
+dmesg | tail -10

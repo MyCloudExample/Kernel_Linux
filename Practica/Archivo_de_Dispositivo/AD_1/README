@@ -1,0 +1,15 @@
+#Pasos para usar el codigo
+
+#1- Limpiar el build
+    make clean
+#2- Compilar el codigo
+    make all
+#3- Cargar el modulo, si al cargar se prsenta el error de permiso denegado otorgrar permisos
+    make load
+    sudo chmod 666 /dev/AD_1
+    cat /dev/AD_1 #Lee el contenido
+#4- Vamos a escribir en el driver
+    echo "Hola Raspberry Pi" > /dev/AD_1
+    cat /dev/AD_1 #Lee el contenido, se vera ver en pantalla Hola Raspberry Pi
+#5- Ver los logs
+    dmesg | tail -5

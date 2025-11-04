@@ -1,0 +1,14 @@
+#Forma de usar el modulo
+
+1- Limpiar la carpeta build usando make clean
+2- Compilar el modulo usando make all
+3- Cargar el modulo usando make load
+4- Ejecucion de la simulacion:
+ 4.1- Encendido del led
+      echo 1 | sudo tee /dev/AD_3
+ 4.2- VEr el estado, se debere ver STATE:1 
+     sudo cat /dev/AD_3
+4.3- Apagado del led
+     echo 0 | sudo tee /dev/AD_3
+4.4- Ver estado, se debeera ver STATE:0
+     sudo cat /dev/AD_3

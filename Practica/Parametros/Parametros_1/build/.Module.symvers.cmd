@@ -1,0 +1,1 @@
+savedcmd_/home/nahuel/Practica/Parametros/Parametros_1/build/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/nahuel/Practica/Parametros/Parametros_1/build/Module.symvers -T /home/nahuel/Practica/Parametros/Parametros_1/build/modules.order -i Module.symvers -e 

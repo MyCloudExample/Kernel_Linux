@@ -1,0 +1,1 @@
+savedcmd_/home/nahuel/Practica/Archivo_de_Dispositivo/AD_2/build/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/nahuel/Practica/Archivo_de_Dispositivo/AD_2/build/Module.symvers -T /home/nahuel/Practica/Archivo_de_Dispositivo/AD_2/build/modules.order -i Module.symvers -e 
