@@ -1,0 +1,15 @@
+#Para usar el modulo sin el programa de usuario se usaran los siguientes comandos
+#Siempre que el modulo se halla cargado al kernel
+
+echo "LED_ON" | sudo tee /dev/pico_serial
+
+echo "LED_OFF" | sudo tee /dev/pico_serial
+
+for i in {1..3}; do
+    echo "Ciclo $i - LED_ON"
+    echo "LED_ON" | sudo tee /dev/pico_serial
+    sleep 1
+    echo "Ciclo $i - LED_OFF"
+    echo "LED_OFF" | sudo tee /dev/pico_serial
+    sleep 1
+done

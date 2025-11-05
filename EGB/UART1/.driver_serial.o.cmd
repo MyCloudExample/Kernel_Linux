@@ -1,8 +1,8 @@
-savedcmd_/home/nahuel/EGB/UART1/build/simple_uart.o :=  aarch64-linux-gnu-gcc-12 -Wp,-MMD,/home/nahuel/EGB/UART1/build/.simple_uart.o.d -nostdinc -I/usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include -I./arch/arm64/include/generated -I/usr/src/linux-headers-6.12.25+rpt-common-rpi/include -I./include -I/usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I/usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi -I./include/generated/uapi -include /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/compiler-version.h -include /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/kconfig.h -include /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DCC_USING_PATCHABLE_FUNCTION_ENTRY -DKASAN_SHADOW_SCALE_SHIFT= -fmacro-prefix-map=/usr/src/linux-headers-6.12.25+rpt-common-rpi/= -std=gnu11 -fshort-wchar -funsigned-char -fno-common -fno-PIE -fno-strict-aliasing -mgeneral-regs-only -DCONFIG_CC_HAS_K_CONSTRAINT=1 -Wno-psabi -mabi=lp64 -fno-asynchronous-unwind-tables -fno-unwind-tables -mbranch-protection=pac-ret -Wa,-march=armv8.5-a -DARM64_ASM_ARCH='"armv8.5-a"' -DKASAN_SHADOW_SCALE_SHIFT= -fno-delete-null-pointer-checks -O2 -fno-allow-store-data-races -fstack-protector-strong -fno-omit-frame-pointer -fno-optimize-sibling-calls -ftrivial-auto-var-init=zero -fno-stack-clash-protection -fpatchable-function-entry=4,2 -falign-functions=8 -fno-strict-overflow -fno-stack-check -fconserve-stack -fno-builtin-wcslen -fno-builtin-wcslen -Wall -Wundef -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Werror=strict-prototypes -Wno-format-security -Wno-trigraphs -Wno-frame-address -Wno-address-of-packed-member -Wmissing-declarations -Wmissing-prototypes -Wframe-larger-than=2048 -Wno-main -Wno-dangling-pointer -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-overflow -Wno-array-bounds -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wenum-conversion -Wextra -Wunused -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-packed-not-aligned -Wno-format-overflow -Wno-format-truncation -Wno-stringop-truncation -Wno-override-init -Wno-missing-field-initializers -Wno-type-limits -Wno-shift-negative-value -Wno-maybe-uninitialized -Wno-sign-compare -Wno-unused-parameter -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1424  -DMODULE  -DKBUILD_BASENAME='"simple_uart"' -DKBUILD_MODNAME='"simple_uart"' -D__KBUILD_MODNAME=kmod_simple_uart -c -o /home/nahuel/EGB/UART1/build/simple_uart.o /home/nahuel/EGB/UART1/build/simple_uart.c  
+savedcmd_/home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.o :=  aarch64-linux-gnu-gcc-12 -Wp,-MMD,/home/nahuel/Kernel_Linux/EGB/UART1/.driver_serial.o.d -nostdinc -I/usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include -I./arch/arm64/include/generated -I/usr/src/linux-headers-6.12.25+rpt-common-rpi/include -I./include -I/usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/uapi -I./arch/arm64/include/generated/uapi -I/usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi -I./include/generated/uapi -include /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/compiler-version.h -include /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/kconfig.h -include /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -DCC_USING_PATCHABLE_FUNCTION_ENTRY -DKASAN_SHADOW_SCALE_SHIFT= -fmacro-prefix-map=/usr/src/linux-headers-6.12.25+rpt-common-rpi/= -std=gnu11 -fshort-wchar -funsigned-char -fno-common -fno-PIE -fno-strict-aliasing -mgeneral-regs-only -DCONFIG_CC_HAS_K_CONSTRAINT=1 -Wno-psabi -mabi=lp64 -fno-asynchronous-unwind-tables -fno-unwind-tables -mbranch-protection=pac-ret -Wa,-march=armv8.5-a -DARM64_ASM_ARCH='"armv8.5-a"' -DKASAN_SHADOW_SCALE_SHIFT= -fno-delete-null-pointer-checks -O2 -fno-allow-store-data-races -fstack-protector-strong -fno-omit-frame-pointer -fno-optimize-sibling-calls -ftrivial-auto-var-init=zero -fno-stack-clash-protection -fpatchable-function-entry=4,2 -falign-functions=8 -fno-strict-overflow -fno-stack-check -fconserve-stack -fno-builtin-wcslen -fno-builtin-wcslen -Wall -Wundef -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Werror=strict-prototypes -Wno-format-security -Wno-trigraphs -Wno-frame-address -Wno-address-of-packed-member -Wmissing-declarations -Wmissing-prototypes -Wframe-larger-than=2048 -Wno-main -Wno-dangling-pointer -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-overflow -Wno-array-bounds -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wenum-conversion -Wextra -Wunused -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-packed-not-aligned -Wno-format-overflow -Wno-format-truncation -Wno-stringop-truncation -Wno-override-init -Wno-missing-field-initializers -Wno-type-limits -Wno-shift-negative-value -Wno-maybe-uninitialized -Wno-sign-compare -Wno-unused-parameter -mstack-protector-guard=sysreg -mstack-protector-guard-reg=sp_el0 -mstack-protector-guard-offset=1424  -DMODULE  -DKBUILD_BASENAME='"driver_serial"' -DKBUILD_MODNAME='"driver_serial"' -D__KBUILD_MODNAME=kmod_driver_serial -c -o /home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.o /home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.c  
 
-source_/home/nahuel/EGB/UART1/build/simple_uart.o := /home/nahuel/EGB/UART1/build/simple_uart.c
+source_/home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.o := /home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.c
 
-deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
+deps_/home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.o := \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/compiler-version.h \
     $(wildcard include/config/CC_VERSION_TEXT) \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/kconfig.h \
@@ -32,24 +32,37 @@ deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
     $(wildcard include/config/ARM64_PTR_AUTH_KERNEL) \
     $(wildcard include/config/ARM64_PTR_AUTH) \
     $(wildcard include/config/BUILTIN_RETURN_ADDRESS_STRIPS_PAC) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/kernel.h \
-    $(wildcard include/config/PREEMPT_VOLUNTARY_BUILD) \
-    $(wildcard include/config/PREEMPT_DYNAMIC) \
-    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_CALL) \
-    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_KEY) \
-    $(wildcard include/config/PREEMPT_) \
-    $(wildcard include/config/DEBUG_ATOMIC_SLEEP) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/module.h \
+    $(wildcard include/config/MODULES) \
+    $(wildcard include/config/SYSFS) \
+    $(wildcard include/config/MODULES_TREE_LOOKUP) \
+    $(wildcard include/config/LIVEPATCH) \
+    $(wildcard include/config/STACKTRACE_BUILD_ID) \
+    $(wildcard include/config/ARCH_USES_CFI_TRAPS) \
+    $(wildcard include/config/MODULE_SIG) \
+    $(wildcard include/config/GENERIC_BUG) \
+    $(wildcard include/config/KALLSYMS) \
     $(wildcard include/config/SMP) \
-    $(wildcard include/config/MMU) \
-    $(wildcard include/config/PROVE_LOCKING) \
+    $(wildcard include/config/TRACEPOINTS) \
+    $(wildcard include/config/TREE_SRCU) \
+    $(wildcard include/config/BPF_EVENTS) \
+    $(wildcard include/config/JUMP_LABEL) \
     $(wildcard include/config/TRACING) \
+    $(wildcard include/config/EVENT_TRACING) \
     $(wildcard include/config/FTRACE_MCOUNT_RECORD) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/stdarg.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/align.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/const.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/vdso/const.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/const.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/array_size.h \
+    $(wildcard include/config/KPROBES) \
+    $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
+    $(wildcard include/config/KUNIT) \
+    $(wildcard include/config/PRINTK_INDEX) \
+    $(wildcard include/config/MODULE_UNLOAD) \
+    $(wildcard include/config/CONSTRUCTORS) \
+    $(wildcard include/config/FUNCTION_ERROR_INJECTION) \
+    $(wildcard include/config/DYNAMIC_DEBUG_CORE) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/list.h \
+    $(wildcard include/config/LIST_HARDENED) \
+    $(wildcard include/config/DEBUG_LIST) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/container_of.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/build_bug.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/compiler.h \
     $(wildcard include/config/TRACE_BRANCH_PROFILING) \
     $(wildcard include/config/PROFILE_ALL_BRANCHES) \
@@ -85,28 +98,15 @@ deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
     $(wildcard include/config/KCSAN) \
     $(wildcard include/config/KCSAN_WEAK_MEMORY) \
     $(wildcard include/config/KCSAN_IGNORE_ATOMICS) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/limits.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/limits.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/vdso/limits.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/linkage.h \
-    $(wildcard include/config/ARCH_USE_SYM_ANNOTATIONS) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/stringify.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/export.h \
-    $(wildcard include/config/MODVERSIONS) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/linkage.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/container_of.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/build_bug.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/bitops.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/bits.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/vdso/bits.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/bits.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/typecheck.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/kernel.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/sysinfo.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/bitops/generic-non-atomic.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/poison.h \
+    $(wildcard include/config/ILLEGAL_POINTER_VALUE) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/const.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/vdso/const.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/const.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/barrier.h \
     $(wildcard include/config/ARM64_PSEUDO_NMI) \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/alternative-macros.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/vdso/bits.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/cpucaps.h \
     $(wildcard include/config/ARM64_PAN) \
     $(wildcard include/config/ARM64_EPAN) \
@@ -128,7 +128,26 @@ deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
   arch/arm64/include/generated/asm/cpucap-defs.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/insn-def.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/brk-imm.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/stringify.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/barrier.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/stat.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/stat.h \
+    $(wildcard include/config/COMPAT) \
+  arch/arm64/include/generated/uapi/asm/stat.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/asm-generic/stat.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/time.h \
+    $(wildcard include/config/POSIX_TIMERS) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/cache.h \
+    $(wildcard include/config/ARCH_HAS_CACHE_LINE_SIZE) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/kernel.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/sysinfo.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/cache.h \
+    $(wildcard include/config/KASAN_HW_TAGS) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/bitops.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/bits.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/bits.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/typecheck.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/bitops/generic-non-atomic.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/bitops.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/bitops/builtin-__ffs.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/bitops/builtin-ffs.h \
@@ -148,8 +167,12 @@ deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
     $(wildcard include/config/ARM64_LSE_ATOMICS) \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/atomic_ll_sc.h \
     $(wildcard include/config/CC_HAS_K_CONSTRAINT) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/export.h \
+    $(wildcard include/config/MODVERSIONS) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/linkage.h \
+    $(wildcard include/config/ARCH_USE_SYM_ANNOTATIONS) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/linkage.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/alternative.h \
-    $(wildcard include/config/MODULES) \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/init.h \
     $(wildcard include/config/MEMORY_HOTPLUG) \
     $(wildcard include/config/HAVE_ARCH_PREL32_RELOCATIONS) \
@@ -176,86 +199,6 @@ deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/asm-generic/swab.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/byteorder/generic.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/bitops/ext2-atomic-setbit.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/hex.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/kstrtox.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/log2.h \
-    $(wildcard include/config/ARCH_HAS_ILOG2_U32) \
-    $(wildcard include/config/ARCH_HAS_ILOG2_U64) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/math.h \
-  arch/arm64/include/generated/asm/div64.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/div64.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/minmax.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/panic.h \
-    $(wildcard include/config/PANIC_TIMEOUT) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/printk.h \
-    $(wildcard include/config/MESSAGE_LOGLEVEL_DEFAULT) \
-    $(wildcard include/config/CONSOLE_LOGLEVEL_DEFAULT) \
-    $(wildcard include/config/CONSOLE_LOGLEVEL_QUIET) \
-    $(wildcard include/config/EARLY_PRINTK) \
-    $(wildcard include/config/PRINTK) \
-    $(wildcard include/config/PRINTK_INDEX) \
-    $(wildcard include/config/DYNAMIC_DEBUG) \
-    $(wildcard include/config/DYNAMIC_DEBUG_CORE) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/kern_levels.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/ratelimit_types.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/param.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/uapi/asm/param.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/param.h \
-    $(wildcard include/config/HZ) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/asm-generic/param.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/spinlock_types_raw.h \
-    $(wildcard include/config/DEBUG_SPINLOCK) \
-    $(wildcard include/config/DEBUG_LOCK_ALLOC) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/spinlock_types.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/qspinlock_types.h \
-    $(wildcard include/config/NR_CPUS) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/qrwlock_types.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/lockdep_types.h \
-    $(wildcard include/config/PROVE_RAW_LOCK_NESTING) \
-    $(wildcard include/config/LOCKDEP) \
-    $(wildcard include/config/LOCK_STAT) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/once_lite.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/sprintf.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/static_call_types.h \
-    $(wildcard include/config/HAVE_STATIC_CALL) \
-    $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/instruction_pointer.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/wordpart.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/module.h \
-    $(wildcard include/config/SYSFS) \
-    $(wildcard include/config/MODULES_TREE_LOOKUP) \
-    $(wildcard include/config/LIVEPATCH) \
-    $(wildcard include/config/STACKTRACE_BUILD_ID) \
-    $(wildcard include/config/ARCH_USES_CFI_TRAPS) \
-    $(wildcard include/config/MODULE_SIG) \
-    $(wildcard include/config/GENERIC_BUG) \
-    $(wildcard include/config/KALLSYMS) \
-    $(wildcard include/config/TRACEPOINTS) \
-    $(wildcard include/config/TREE_SRCU) \
-    $(wildcard include/config/BPF_EVENTS) \
-    $(wildcard include/config/JUMP_LABEL) \
-    $(wildcard include/config/EVENT_TRACING) \
-    $(wildcard include/config/KPROBES) \
-    $(wildcard include/config/KUNIT) \
-    $(wildcard include/config/MODULE_UNLOAD) \
-    $(wildcard include/config/CONSTRUCTORS) \
-    $(wildcard include/config/FUNCTION_ERROR_INJECTION) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/list.h \
-    $(wildcard include/config/LIST_HARDENED) \
-    $(wildcard include/config/DEBUG_LIST) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/poison.h \
-    $(wildcard include/config/ILLEGAL_POINTER_VALUE) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/stat.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/stat.h \
-    $(wildcard include/config/COMPAT) \
-  arch/arm64/include/generated/uapi/asm/stat.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/asm-generic/stat.h \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/time.h \
-    $(wildcard include/config/POSIX_TIMERS) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/cache.h \
-    $(wildcard include/config/ARCH_HAS_CACHE_LINE_SIZE) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/cache.h \
-    $(wildcard include/config/KASAN_HW_TAGS) \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/kasan-enabled.h \
     $(wildcard include/config/KASAN) \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/static_key.h \
@@ -277,6 +220,9 @@ deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/mte-def.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/math64.h \
     $(wildcard include/config/ARCH_SUPPORTS_INT128) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/math.h \
+  arch/arm64/include/generated/asm/div64.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/div64.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/vdso/math64.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/time64.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/vdso/time64.h \
@@ -285,6 +231,11 @@ deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/time32.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/timex.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/timex.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/param.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/uapi/asm/param.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/param.h \
+    $(wildcard include/config/HZ) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/asm-generic/param.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/timex.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/arch_timer.h \
     $(wildcard include/config/ARM_ARCH_TIMER_OOL_WORKAROUND) \
@@ -309,6 +260,55 @@ deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
     $(wildcard include/config/GENERIC_BUG_RELATIVE_POINTERS) \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/instrumentation.h \
     $(wildcard include/config/NOINSTR_VALIDATION) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/once_lite.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/panic.h \
+    $(wildcard include/config/PANIC_TIMEOUT) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/printk.h \
+    $(wildcard include/config/MESSAGE_LOGLEVEL_DEFAULT) \
+    $(wildcard include/config/CONSOLE_LOGLEVEL_DEFAULT) \
+    $(wildcard include/config/CONSOLE_LOGLEVEL_QUIET) \
+    $(wildcard include/config/EARLY_PRINTK) \
+    $(wildcard include/config/PRINTK) \
+    $(wildcard include/config/DYNAMIC_DEBUG) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/stdarg.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/kern_levels.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/ratelimit_types.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/spinlock_types_raw.h \
+    $(wildcard include/config/DEBUG_SPINLOCK) \
+    $(wildcard include/config/DEBUG_LOCK_ALLOC) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/spinlock_types.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/qspinlock_types.h \
+    $(wildcard include/config/NR_CPUS) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/asm-generic/qrwlock_types.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/lockdep_types.h \
+    $(wildcard include/config/PROVE_RAW_LOCK_NESTING) \
+    $(wildcard include/config/LOCKDEP) \
+    $(wildcard include/config/LOCK_STAT) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/kernel.h \
+    $(wildcard include/config/PREEMPT_VOLUNTARY_BUILD) \
+    $(wildcard include/config/PREEMPT_DYNAMIC) \
+    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_CALL) \
+    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_KEY) \
+    $(wildcard include/config/PREEMPT_) \
+    $(wildcard include/config/DEBUG_ATOMIC_SLEEP) \
+    $(wildcard include/config/MMU) \
+    $(wildcard include/config/PROVE_LOCKING) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/align.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/array_size.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/limits.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/uapi/linux/limits.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/vdso/limits.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/hex.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/kstrtox.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/log2.h \
+    $(wildcard include/config/ARCH_HAS_ILOG2_U32) \
+    $(wildcard include/config/ARCH_HAS_ILOG2_U64) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/minmax.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/sprintf.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/static_call_types.h \
+    $(wildcard include/config/HAVE_STATIC_CALL) \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/instruction_pointer.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/wordpart.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/cpumask.h \
     $(wildcard include/config/FORCE_NR_CPUS) \
     $(wildcard include/config/HOTPLUG_CPU) \
@@ -965,7 +965,6 @@ deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
     $(wildcard include/config/HAVE_MOD_ARCH_SPECIFIC) \
     $(wildcard include/config/MODULES_USE_ELF_REL) \
     $(wildcard include/config/MODULES_USE_ELF_RELA) \
-  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/cdev.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/device.h \
     $(wildcard include/config/HAS_IOMEM) \
     $(wildcard include/config/GENERIC_MSI_IRQ) \
@@ -1010,7 +1009,9 @@ deps_/home/nahuel/EGB/UART1/build/simple_uart.o := \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/device/driver.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/arch/arm64/include/asm/device.h \
   /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/pm_wakeup.h \
+  /usr/src/linux-headers-6.12.25+rpt-common-rpi/include/linux/cdev.h \
+  include/generated/uapi/linux/version.h \
 
-/home/nahuel/EGB/UART1/build/simple_uart.o: $(deps_/home/nahuel/EGB/UART1/build/simple_uart.o)
+/home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.o: $(deps_/home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.o)
 
-$(deps_/home/nahuel/EGB/UART1/build/simple_uart.o):
+$(deps_/home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.o):

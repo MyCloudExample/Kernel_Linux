@@ -1,1 +1,0 @@
-savedcmd_/home/nahuel/EGB/UART1/build/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/nahuel/EGB/UART1/build/Module.symvers -T /home/nahuel/EGB/UART1/build/modules.order -i Module.symvers -e 

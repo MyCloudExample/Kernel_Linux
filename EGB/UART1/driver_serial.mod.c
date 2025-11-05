@@ -19,29 +19,24 @@ __section(".gnu.linkonce.this_module") = {
 static const struct modversion_info ____versions[]
 __used __section("__versions") = {
 	{ 0x122c3a7e, "_printk" },
-	{ 0xe3ec2f2b, "alloc_chrdev_region" },
-	{ 0x5d9d9fd4, "cdev_init" },
-	{ 0xcc335c1c, "cdev_add" },
+	{ 0xd75c6742, "__register_chrdev" },
 	{ 0xf311fc60, "class_create" },
 	{ 0x93ab9e33, "device_create" },
-	{ 0x607587f4, "cdev_del" },
-	{ 0x6091b333, "unregister_chrdev_region" },
+	{ 0x6bc3fbc0, "__unregister_chrdev" },
 	{ 0x4a41ecb3, "class_destroy" },
-	{ 0x213a7d94, "filp_open" },
-	{ 0x656e4a6e, "snprintf" },
-	{ 0xbe8b47af, "kernel_write" },
-	{ 0xf91e01de, "filp_close" },
-	{ 0xf0fdf6cb, "__stack_chk_fail" },
 	{ 0xe095e43a, "device_destroy" },
 	{ 0x52c5c991, "__kmalloc_noprof" },
 	{ 0xdcb764ad, "memset" },
-	{ 0xe2d5255a, "strcmp" },
+	{ 0x213a7d94, "filp_open" },
+	{ 0xbe8b47af, "kernel_write" },
+	{ 0xf91e01de, "filp_close" },
 	{ 0x37a0cba, "kfree" },
 	{ 0x12a4e128, "__arch_copy_from_user" },
+	{ 0xf0fdf6cb, "__stack_chk_fail" },
 	{ 0x39ff040a, "module_layout" },
 };
 
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "FC1CA19202881A2E5F77D3B");
+MODULE_INFO(srcversion, "32BC13D10756DE28FA8FF7F");

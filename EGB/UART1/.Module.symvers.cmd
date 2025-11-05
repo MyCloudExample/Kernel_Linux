@@ -1,0 +1,1 @@
+savedcmd_/home/nahuel/Kernel_Linux/EGB/UART1/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/nahuel/Kernel_Linux/EGB/UART1/Module.symvers -T /home/nahuel/Kernel_Linux/EGB/UART1/modules.order -i Module.symvers -e 
