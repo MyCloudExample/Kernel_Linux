@@ -9,7 +9,7 @@ make clean
 make all
 
 #cargo el modulo
-sudo insmod driver_serial.ko
+sudo insmod build/driver_serial.ko
 
 # Verificar que está cargado
 lsmod | grep driver_serial
