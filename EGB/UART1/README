@@ -1,36 +1,17 @@
-#Para usar el modulo sin el programa de usuario se usaran los siguientes comandos
-#Siempre que el modulo se halla cargado al kernel
-#Antes de ejecutar realizar los siguiente pasos
+#Para usar el modulo seguir estos pasos_
 
-#Limpio el build
-make clean
-
-#Compilo el modulo
-make all
-
-#cargo el modulo
-sudo insmod build/driver_serial.ko
-
-# Verificar que está cargado
-lsmod | grep driver_serial
-
-# Descargar módulo  
-sudo rmmod driver_serial
-
-# Verificar que se descargó
-lsmod | grep driver_serial
-
-#Comando para la prueba o ejecucion
-
-echo "LED_ON" | sudo tee /dev/pico_serial
-
-echo "LED_OFF" | sudo tee /dev/pico_serial
-
-for i in {1..3}; do
-    echo "Ciclo $i - LED_ON"
-    echo "LED_ON" | sudo tee /dev/pico_serial
-    sleep 1
-    echo "Ciclo $i - LED_OFF"
-    echo "LED_OFF" | sudo tee /dev/pico_serial
-    sleep 1
-done
+#1- Se puede compilar el modulo usando
+    make all
+#1- Por otro lado si se queire compilar y cargar el modulo en un solo paso
+    make load
+#2- Una vez cargado el modulo se puede verificar si se cargo
+    make status
+#3- Verificado los paso 1 y 2 se podran ejecutar las pruebas
+    make test #enciende el led 2 segundo y luego lo apaga
+    make test-on #enciende el led
+    make test-off #apaga el led
+    make test-blink #Blinky del led durante unos segundos
+#4- Mostrar los logs del kernel
+    make logs
+#5- Se remueve el modulo del kernel
+    make unload
