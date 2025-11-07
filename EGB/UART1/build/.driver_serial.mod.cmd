@@ -1,1 +1,0 @@
-savedcmd_/home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.mod := printf '%s\n'   driver_serial.o | awk '!x[$$0]++ { print("/home/nahuel/Kernel_Linux/EGB/UART1/"$$0) }' > /home/nahuel/Kernel_Linux/EGB/UART1/driver_serial.mod
