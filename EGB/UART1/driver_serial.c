@@ -45,6 +45,7 @@ static ssize_t device_write(struct file *file, const char __user *buffer,
     
     printk(KERN_INFO "Pico Serial: Enviando: %s", cmd_buffer);
     
+    // Usar ttyS0 que es el que existe en tu sistema
     serial_file = filp_open("/dev/ttyS0", O_WRONLY, 0);
     if (IS_ERR(serial_file)) {
         printk(KERN_ERR "Pico Serial: Error abriendo ttyS0: %ld\n", PTR_ERR(serial_file));
@@ -83,11 +84,7 @@ static int __init pico_serial_init(void) {
     }
     
     // Crear clase de dispositivo
-#if LINUX_VERSION_CODE >= KERNEL_VERSION(6, 4, 0)
     pico_class = class_create(CLASS_NAME);
-#else
-    pico_class = class_create(THIS_MODULE, CLASS_NAME);
-#endif
     if (IS_ERR(pico_class)) {
         unregister_chrdev(major_number, DEVICE_NAME);
         printk(KERN_ALERT "Pico Serial: Error creando clase\n");
