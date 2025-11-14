@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración de Parámetros</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .param-group {
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        input[type="number"] {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .unit {
+            color: #666;
+            font-weight: bold;
+            min-width: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        button {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-save {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+        }
+
+        .btn-save:hover {
+            background: linear-gradient(135deg, #45a049, #4CAF50);
+            transform: translateY(-2px);
+        }
+
+        .btn-reset {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            color: white;
+        }
+
+        .btn-reset:hover {
+            background: linear-gradient(135deg, #ee5a52, #ff6b6b);
+            transform: translateY(-2px);
+        }
+
+        .values-display {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            border-left: 4px solid #667eea;
+        }
+
+        .values-display h3 {
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .value-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .value-item:last-child {
+            border-bottom: none;
+        }
+
+        .value-label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .value-number {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .log-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn-log {
+            background: linear-gradient(135deg, #6c757d, #5a6268);
+            color: white;
+            padding: 10px 15px;
+            flex: 1;
+        }
+
+        .btn-log:hover {
+            background: linear-gradient(135deg, #5a6268, #6c757d);
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .alert {
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .alert-error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Configuración de Parámetros</h1>
+        
+        <div id="alert" class="alert"></div>
+        
+        <form id="configForm">
+            <div class="param-group">
+                <label for="setpoint">Setpoint</label>
+                <div class="input-group">
+                    <input type="number" id="setpoint" step="0.1" value="{{ setpoint }}" placeholder="Ingrese el valor setpoint" required>
+                    <span class="unit">m</span>
+                </div>
+            </div>
+
+            <div class="param-group">
+                <label for="altura_maxima">Altura Máxima</label>
+                <div class="input-group">
+                    <input type="number" id="altura_maxima" step="0.1" value="{{ altura_maxima }}" placeholder="Ingrese altura máxima" required>
+                    <span class="unit">m</span>
+                </div>
+            </div>
+
+            <div class="param-group">
+                <label for="altura_minima">Altura Mínima</label>
+                <div class="input-group">
+                    <input type="number" id="altura_minima" step="0.1" value="{{ altura_minima }}" placeholder="Ingrese altura mínima" required>
+                    <span class="unit">m</span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn-save">Guardar Configuración</button>
+                <button type="button" class="btn-reset" onclick="resetValues()">Restablecer</button>
+            </div>
+        </form>
+
+        <div class="values-display">
+            <h3>Valores Actuales</h3>
+            <div class="value-item">
+                <span class="value-label">Setpoint:</span>
+                <span class="value-number">{{ setpoint }} m</span>
+            </div>
+            <div class="value-item">
+                <span class="value-label">Altura Máxima:</span>
+                <span class="value-number">{{ altura_maxima }} m</span>
+            </div>
+            <div class="value-item">
+                <span class="value-label">Altura Mínima:</span>
+                <span class="value-number">{{ altura_minima }} m</span>
+            </div>
+        </div>
+
+        <div class="log-buttons">
+            <a href="{{ url_for('ver_logs') }}" target="_blank">
+                <button type="button" class="btn-log">VER LOGS</button>
+            </a>
+            <a href="{{ url_for('ver_conexiones') }}" target="_blank">
+                <button type="button" class="btn-log">VER CONEXIONES</button>
+            </a>
+        </div>
+
+        <div class="footer">
+            UTN FRA - TD3 - GRUPO 9 - BUSTAMANTE, PORTAS - 2025
+        </div>
+    </div>
+
+    <script>
+        function showAlert(message, type) {
+            const alert = document.getElementById('alert');
+            alert.textContent = message;
+            alert.className = `alert alert-${type}`;
+            alert.style.display = 'block';
+            
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000);
+        }
+
+        document.getElementById('configForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            try {
+                const response = await fetch('/configurar', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showAlert('Configuración guardada exitosamente!', 'success');
+                    // Actualizar los valores mostrados
+                    document.querySelectorAll('.value-number')[0].textContent = data.setpoint + ' m';
+                    document.querySelectorAll('.value-number')[1].textContent = data.altura_maxima + ' m';
+                    document.querySelectorAll('.value-number')[2].textContent = data.altura_minima + ' m';
+                } else {
+                    showAlert(data.error || 'Error al guardar la configuración', 'error');
+                }
+            } catch (error) {
+                showAlert('Error de conexión: ' + error.message, 'error');
+            }
+        });
+
+        async function resetValues() {
+            if (!confirm('¿Estás seguro de que quieres restablecer todos los valores?')) {
+                return;
+            }
+            
+            try {
+                const response = await fetch('/reset', {
+                    method: 'POST'
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    // Actualizar formulario
+                    document.getElementById('setpoint').value = data.setpoint;
+                    document.getElementById('altura_maxima').value = data.altura_maxima;
+                    document.getElementById('altura_minima').value = data.altura_minima;
+                    
+                    // Actualizar display
+                    document.querySelectorAll('.value-number')[0].textContent = data.setpoint + ' m';
+                    document.querySelectorAll('.value-number')[1].textContent = data.altura_maxima + ' m';
+                    document.querySelectorAll('.value-number')[2].textContent = data.altura_minima + ' m';
+                    
+                    showAlert('Valores restablecidos exitosamente!', 'success');
+                } else {
+                    showAlert('Error al restablecer los valores', 'error');
+                }
+            } catch (error) {
+                showAlert('Error de conexión: ' + error.message, 'error');
+            }
+        }
+    </script>
+</body>
+</html>

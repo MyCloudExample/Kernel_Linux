@@ -1,0 +1,68 @@
+2025-11-01 18:17:44,915 [INFO] Servidor Flask iniciado
+2025-11-01 18:17:44,946 [WARNING]  * Debugger is active!
+2025-11-01 18:17:44,947 [INFO]  * Debugger PIN: 132-617-495
+2025-11-01 18:19:44,190 [INFO] Servidor Flask iniciado
+2025-11-01 18:19:44,228 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.2:5000
+2025-11-01 18:19:44,229 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-01 18:19:44,230 [INFO]  * Restarting with stat
+2025-11-01 18:19:44,689 [INFO] Servidor Flask iniciado
+2025-11-01 18:19:44,719 [WARNING]  * Debugger is active!
+2025-11-01 18:19:44,720 [INFO]  * Debugger PIN: 132-617-495
+2025-11-01 18:20:02,264 [INFO] Acceso a la página principal
+2025-11-01 18:20:02,303 [INFO] 100.119.195.33 - - [01/Nov/2025 18:20:02] "GET / HTTP/1.1" 200 -
+2025-11-01 18:20:04,696 [INFO] 100.119.195.33 - - [01/Nov/2025 18:20:04] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:20:14,392 [INFO] 100.119.195.33 - - [01/Nov/2025 18:20:14] "GET /ver_logs HTTP/1.1" 200 -
+2025-11-01 18:20:16,949 [INFO] 100.119.195.33 - - [01/Nov/2025 18:20:16] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:20:22,596 [INFO] 100.119.195.33 - - [01/Nov/2025 18:20:22] "GET /ver_logs HTTP/1.1" 200 -
+2025-11-01 18:21:33,497 [INFO] Acceso a la página principal
+2025-11-01 18:21:33,500 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:33] "GET / HTTP/1.1" 200 -
+2025-11-01 18:21:37,558 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:37] "GET /ver_logs HTTP/1.1" 200 -
+2025-11-01 18:21:40,422 [INFO] Acceso a la página principal
+2025-11-01 18:21:40,423 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:40] "GET / HTTP/1.1" 200 -
+2025-11-01 18:21:45,672 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:45] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:21:53,105 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:53] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:21:56,103 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:56] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:21:57,230 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:57] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:21:57,990 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:57] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:21:58,174 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:58] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:21:58,646 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:58] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:21:59,352 [INFO] 100.119.195.33 - - [01/Nov/2025 18:21:59] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:22:10,514 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:10] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:22:11,234 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:11] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:22:13,816 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:13] "GET /ver_logs HTTP/1.1" 200 -
+2025-11-01 18:22:16,843 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:16] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-01 18:22:41,555 [INFO] Incrementar TARGET → 6
+2025-11-01 18:22:41,557 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:41] "[32mPOST /target/incrementar HTTP/1.1[0m" 302 -
+2025-11-01 18:22:41,733 [INFO] Acceso a la página principal
+2025-11-01 18:22:41,735 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:41] "GET / HTTP/1.1" 200 -
+2025-11-01 18:22:42,440 [INFO] Incrementar TARGET → 7
+2025-11-01 18:22:42,442 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:42] "[32mPOST /target/incrementar HTTP/1.1[0m" 302 -
+2025-11-01 18:22:42,618 [INFO] Acceso a la página principal
+2025-11-01 18:22:42,620 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:42] "GET / HTTP/1.1" 200 -
+2025-11-01 18:22:42,732 [INFO] Incrementar TARGET → 8
+2025-11-01 18:22:42,733 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:42] "[32mPOST /target/incrementar HTTP/1.1[0m" 302 -
+2025-11-01 18:22:42,921 [INFO] Acceso a la página principal
+2025-11-01 18:22:42,923 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:42] "GET / HTTP/1.1" 200 -
+2025-11-01 18:22:44,862 [INFO] 100.119.195.33 - - [01/Nov/2025 18:22:44] "GET /ver_conexiones HTTP/1.1" 200 -
+2025-11-09 20:22:46,150 [INFO] Servidor Flask iniciado - Sistema de Configuración de Parámetros
+2025-11-09 20:22:46,326 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.8:5000
+2025-11-09 20:22:46,327 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-09 20:22:46,332 [INFO]  * Restarting with stat
+2025-11-09 20:22:47,315 [INFO] Servidor Flask iniciado - Sistema de Configuración de Parámetros
+2025-11-09 20:22:47,391 [WARNING]  * Debugger is active!
+2025-11-09 20:22:47,394 [INFO]  * Debugger PIN: 126-324-640
+2025-11-09 20:23:17,442 [INFO] Acceso a la página principal
+2025-11-09 20:23:17,502 [INFO] 192.168.0.12 - - [09/Nov/2025 20:23:17] "GET / HTTP/1.1" 200 -
+2025-11-09 20:23:48,525 [INFO] 192.168.0.12 - - [09/Nov/2025 20:23:48] "[35m[1mPOST /configurar HTTP/1.1[0m" 500 -
+2025-11-09 20:23:55,570 [INFO] 192.168.0.12 - - [09/Nov/2025 20:23:55] "[35m[1mPOST /configurar HTTP/1.1[0m" 500 -
+2025-11-09 20:24:03,408 [INFO] 192.168.0.12 - - [09/Nov/2025 20:24:03] "[35m[1mPOST /configurar HTTP/1.1[0m" 500 -
+2025-11-09 20:24:16,676 [INFO] 192.168.0.12 - - [09/Nov/2025 20:24:16] "[35m[1mPOST /configurar HTTP/1.1[0m" 500 -
+2025-11-09 20:24:22,996 [INFO] 192.168.0.12 - - [09/Nov/2025 20:24:22] "[35m[1mPOST /configurar HTTP/1.1[0m" 500 -
+2025-11-09 20:24:31,631 [INFO] 192.168.0.12 - - [09/Nov/2025 20:24:31] "[35m[1mPOST /configurar HTTP/1.1[0m" 500 -
+2025-11-09 20:24:37,544 [INFO] 192.168.0.12 - - [09/Nov/2025 20:24:37] "[35m[1mPOST /configurar HTTP/1.1[0m" 500 -

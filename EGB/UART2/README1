@@ -1,0 +1,11 @@
+#Antes de usar en la RAsoberry Pi 3 se debe deshabiliatar el BLuethoot
+
+# 1. Editar el config.txt para deshabilitar Bluetooth y habilitar UART
+sudo nano /boot/config.txt
+
+# 2. Añadir estas líneas al final del archivo:
+enable_uart=1
+dtoverlay=disable-bt
+
+# 3. Guardar y reiniciar
+sudo reboot

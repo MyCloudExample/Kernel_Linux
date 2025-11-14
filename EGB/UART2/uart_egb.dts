@@ -1,0 +1,44 @@
+/dts-v1/;
+/plugin/;
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2837", "brcm,bcm2836", "brcm,bcm2708", "brcm,bcm2709";
+
+    fragment@0 {
+        target = <&uart0>;
+        __overlay__ {
+            status = "okay";
+            pinctrl-names = "default";
+            pinctrl-0 = <&uart0_pins>;
+            egb_uart: egb_uart {
+                compatible = "Her_Jorj,egb";
+                status = "okay";
+            };
+        };
+    };
+
+    fragment@1 {
+        target = <&uart0_pins>;
+        __overlay__ {
+            brcm,pins = <14 15>;
+            brcm,function = <4>; /* ALT0 */
+            brcm,pull = <0 2>;   /* Pull down for TX, pull up for RX */
+        };
+    };
+
+    fragment@2 {
+        target = <&bt>;
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+
+    fragment@3 {
+        target-path = "/aliases";
+        __overlay__ {
+            serial0 = "/soc/serial@7e201000";
+        };
+    };
+};
