@@ -9,3 +9,19 @@ dtoverlay=disable-bt
 
 # 3. Guardar y reiniciar
 sudo reboot
+
+#===========================================================================
+#1 Compilacion del proyecto
+    make all
+#2 Construccion del devtree (solo una vez)
+    make build-devtree 
+#3 Carga del dev-tree (solo una vez)
+    make load-devtree
+#4 Carga del modulo
+    make insmod
+#5 Para remover el modulo hay que mataar procesos
+    sudo pkill -9 -u nahuel
+    #Reincia el SSH y luego se usa 
+    make rmmod
+    #Limpiar el buffer del kernel
+    sudo dmesg -C
